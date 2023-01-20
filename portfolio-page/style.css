@@ -79,6 +79,7 @@
 .personal-info,
 .socials,
 .follow-btn {
+    margin-bottom: 4em;
     padding: 2em;
     border-bottom: 1px solid gray;
 }
