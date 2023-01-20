@@ -101,6 +101,13 @@
 /* SOCIALS */
 .socials {
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.socials p .material-icons {
+    display: block;
+    margin: .5em;
 }
 
 /* FOLLOW BUTTON */
