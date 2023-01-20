@@ -120,12 +120,18 @@
 }
 
 .follow-btn button {
+    display: flex;
+    align-items: center;
     width: 120px;
     cursor: pointer;
     padding: .8em 1.5em;
     color: #fff;
     background-color: #f8b02b;
     border: transparent;
+}
+
+.follow-btn .material-icons {
+    margin-right: 10px;
 }
 
 /* ABOUT ME */
