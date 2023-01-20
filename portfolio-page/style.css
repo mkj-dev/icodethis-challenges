@@ -148,7 +148,9 @@
 
 /* PICTURES HEADING */
 .pictures-heading {
-    margin: 4em auto;
+    margin: 4em auto 1em auto;
+    max-width: 420px;
+    border-bottom: 1px solid #5e5e5e;
     text-align: center;
     font-size: 1.2rem;
 }
