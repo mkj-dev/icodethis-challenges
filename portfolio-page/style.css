@@ -89,14 +89,11 @@
 }
 
 .personal-info p {
+    display: flex;
+    margin-top: 4px;
+    color: #5e5e5e;
     margin-top: .2em;
     margin-bottom: .2em;
-}
-
-.personal-info p,
-.personal-info small {
-    display: flex;
-    color: #5e5e5e;
 }
 
 .personal-info .material-icons {
