@@ -1,0 +1,137 @@
+.container {
+    max-width: 1200px;
+    margin: 4em auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GRID LAYOUT */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.8fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "profile-pic portfolio-info portfolio-info"
+        ". . ."
+        ". . .";
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+}
+
+.portfolio-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "personal-info socials follow-btn"
+        "about-me about-me skills"
+        "about-me about-me skills";
+    grid-area: portfolio-info;
+}
+
+.personal-info {
+    grid-area: personal-info;
+}
+
+.socials {
+    grid-area: socials;
+}
+
+.follow-btn {
+    grid-area: follow-btn;
+}
+
+.about-me {
+    grid-area: about-me;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+/* PROFILE PICTURE */
+.profile-pic {
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    margin-right: 5em;
+    margin-top: -1.5em;
+}
+
+.profile-pic img {
+    max-height: 500px;
+    -webkit-box-shadow: 2px 5px 28px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 2px 5px 28px 0px rgba(66, 68, 90, 1);
+    box-shadow: 2px 5px 28px 0px rgba(66, 68, 90, 1);
+}
+
+/* PORTFOLIO INFO BORDERS */
+.socials {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.personal-info,
+.socials,
+.follow-btn {
+    padding: 2em;
+    border-bottom: 1px solid gray;
+}
+
+/* PERSONAL INFO */
+.personal-info h2 {
+    margin-bottom: 0;
+}
+
+.personal-info p {
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.personal-info p,
+.personal-info small {
+    color: #5e5e5e;
+}
+
+/* SOCIALS */
+.socials {
+    text-align: center;
+}
+
+/* FOLLOW BUTTON */
+.follow-btn {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.follow-btn button {
+    width: 120px;
+    padding: .8em 1.5em;
+    color: #fff;
+    background-color: #f8b02b;
+    border: transparent;
+}
+
+/* ABOUT ME */
+.about-me p {
+    font-size: .8rem;
+}
+
+/* SKILLS */
+.skills {
+    margin-left: 2em;
+}
+
+.skills ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.skills ul li {
+    margin-bottom: .5em;
+}
