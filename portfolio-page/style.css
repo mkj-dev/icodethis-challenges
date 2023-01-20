@@ -95,7 +95,12 @@
 
 .personal-info p,
 .personal-info small {
+    display: flex;
     color: #5e5e5e;
+}
+
+.personal-info .material-icons {
+    margin-right: 10px;
 }
 
 /* SOCIALS */
