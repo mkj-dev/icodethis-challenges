@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="form-wrapper">
+            <form action="" method="post">
+                <h2>Join the Community</h2>
+                <p>Take your art to the next level! Get it seen by millions of people.</p>
+                <button type="button" class="btn btn-facebook">Join with Facebook</button>
+                <p>Or</p>
+                <div class="flex-container">
+                    <label for="firstname"></label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First name" minlength="2" maxlength="40" required>
+                    <label for="lastname"></label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Last name" minlength="2" maxlength="40" required>
+                </div>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email" minlength="4" maxlength="40" required>
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Password"  minlength="4" maxlength="60" required>
+                <button type="submit" class="btn btn-signup">Create New Account</button>
+                <p>By joining, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
