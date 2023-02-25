@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Popup</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Vue 3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="app">
+        <h1 style="text-align: center;">{{ title }}</h1>
+        <account-popup :name="name" :username="username"></account-popup>
+    </div>
+
+<!-- Components -->
+<script src="./AccountPopup.js"></script>
+<!-- Create and mount the app -->
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                title: 'Account Popup',
+                name: 'Mkj Dev',
+                username: '@mkj_dev',
+            }
+        }
+    });
+    app.component('account-popup', accountPopup);
+    app.mount('#app');
+</script>
+</body>
+</html>
