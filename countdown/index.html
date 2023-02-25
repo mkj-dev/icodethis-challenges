@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,75 @@
     <!-- Vue 3 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js"></script>
 </head>
+
 <body>
-    
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <div id="countdown">
+            <div class="time">
+                <p>{{ months }}</p>
+                <p class="text">Months</p>
+            </div>
+            <div class="time">
+                <p>{{ days }}</p>
+                <p class="text">Days</p>
+            </div>
+            <div class="time">
+                <p>{{ hours }}</p>
+                <p class="text">Hours</p>
+            </div>
+            <div class="time">
+                <p>{{ minutes }}</p>
+                <p class="text">Minutes</p>
+            </div>
+            <div class="time">
+                <p>{{ seconds }}</p>
+                <p class="text">Seconds</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    title: 'Until new beginnings',
+                    targetDate: new Date((new Date().getFullYear() + 1), 0, 1), // End of the current year
+                    months: '',
+                    days: '',
+                    hours: '',
+                    minutes: '',
+                    seconds: '',
+                }
+            },
+            mounted() {
+                this.updateCountdown(); // Call the function once at the beginning
+                setInterval(() => {
+                    this.updateCountdown(); // Call the function every second
+                }, 1000);
+            },
+            methods: {
+                updateCountdown() {
+                    const now = new Date();
+                    const diff = this.targetDate - now;
+                    if (diff <= 0) {
+                        this.months = '0';
+                        this.days = '0';
+                        this.hours = '0';
+                        this.minutes = '0';
+                        this.seconds = '0';
+                    } else {
+                        this.months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
+                        this.days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 30;
+                        this.hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+                        this.minutes = Math.floor(diff / (1000 * 60)) % 60;
+                        this.seconds = Math.floor(diff / 1000) % 60;
+                    }
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
 </body>
+
 </html>
