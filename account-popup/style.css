@@ -1,0 +1,100 @@
+html, body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100%;
+    background-color: #f0e7dd;
+    color: #000;
+}
+
+#app {
+    height: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* ACCOUNT POPUP */
+#account-popup {
+    width: 300px;
+    margin: 5% auto;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    padding: .25rem;
+    background: rgb(240,231,221);
+    background: -moz-linear-gradient(180deg, rgba(240,231,221,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(240,231,221,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(240,231,221,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0e7dd",endColorstr="#ffffff",GradientType=1);
+    cursor: pointer;
+}
+
+/* ACCOUNT WRAPPER */
+.account-wrapper {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* ACCOUNT PROFILE IMAGE */
+.account-profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: .75rem
+}
+
+/* ACCOUNT INFO */
+.account-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: .75rem;
+    margin-right: 30%;
+}
+
+/* ACCOUNT MODAL */
+#account-modal {
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 350px;
+    height: fit-content;
+    padding: 1rem;
+    margin: 0 auto
+}
+
+.connect-other-account-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    color: #00aef3;
+}
+
+.add-account-sign {
+    font-size: 1.75rem;
+}
+
+.add-account-sign-p {
+    font-size: 1.25rem;
+}
+
+/* DIVIDING LINE */
+.div-line {
+    width: 80%;
+}
+
+/* ACCOUNT INTERACTIONS */
+.account-interactions {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.interaction {
+    display: flex;
+    cursor: pointer;
+    width: 44%;
+    justify-content: space-evenly;
+}
