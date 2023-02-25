@@ -15,7 +15,12 @@
 <body>
     <div id="app">
         <h1 style="text-align: center;">{{ title }}</h1>
-        <account-popup :name="name" :username="username"></account-popup>
+        <account-popup 
+            :name="name"
+            :username="username"
+            @click="closeAccountModal"
+        >
+        </account-popup>
     </div>
 
 <!-- Components -->
@@ -28,6 +33,16 @@
                 title: 'Account Popup',
                 name: 'Mkj Dev',
                 username: '@mkj_dev',
+            }
+        },
+        methods: {
+            closeAccountModal() {
+                const accModalCloseBtn = document.querySelector('.account-modal-close-btn');
+                const accountModal = document.getElementById('account-modal');
+                
+                accModalCloseBtn.addEventListener('click', () => {
+                    accountModal.remove();
+                });
             }
         }
     });
