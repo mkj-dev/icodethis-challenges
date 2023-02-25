@@ -68,6 +68,7 @@ html, body {
     justify-content: space-evenly;
     width: 80%;
     color: #00aef3;
+    cursor: pointer;
 }
 
 .add-account-sign {
@@ -76,6 +77,15 @@ html, body {
 
 .add-account-sign-p {
     font-size: 1.25rem;
+}
+
+/* ACCOUNT MODAL CLOSE BUTTON */
+.account-modal-close-btn {
+    width: 100%;
+    text-align: end;
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
 }
 
 /* DIVIDING LINE */
