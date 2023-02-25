@@ -15,6 +15,7 @@ const accountPopup = {
             const html =
             /*html*/
             `<div id="account-modal" class="account-wrapper">
+                <div class="account-modal-close-btn"><span>X</span></div>
                 <img src="./avatar.png" class="account-profile-img">
                 <div class="account-info">
                     <h2 style="margin-bottom: 0;">${ this.name }</h2>
@@ -54,7 +55,8 @@ const accountPopup = {
             </div>`
 
             accountPopup.insertAdjacentHTML('beforebegin', html);
-        }
+        },
+
     },
     template:
     /*html*/
