@@ -10,11 +10,11 @@ const accountPopup = {
         }
     },
     methods: {
-        showAccountInfo() {
+        showAccountModal() {
             const accountPopup = document.getElementById('account-popup');
             const html =
             /*html*/
-            `<div id="account-modal" class="account-wrapper visible">
+            `<div id="account-modal" class="account-wrapper">
                 <img src="./avatar.png" class="account-profile-img">
                 <div class="account-info">
                     <h2 style="margin-bottom: 0;">${ this.name }</h2>
@@ -52,13 +52,13 @@ const accountPopup = {
                     </div>
                 </div>
             </div>`
-             
+
             accountPopup.insertAdjacentHTML('beforebegin', html);
         }
     },
     template:
     /*html*/
-    `<div id="account-popup" class="account-wrapper" @click="showAccountInfo">
+    `<div id="account-popup" class="account-wrapper" @click="showAccountModal">
         <img src="./avatar.png" class="account-profile-img">
         <div class="account-info">
             <h2 style="margin-bottom: 0;">{{ name }}</h2>
