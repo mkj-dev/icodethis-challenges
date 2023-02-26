@@ -33,3 +33,9 @@ body {
 .text {
     font-size: 1.25rem;
 }
+
+@media screen and (max-width: 600px) {
+    #countdown {
+        flex-direction: column;
+    }
+}
