@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  background-color: #d3d6fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  margin: 4rem auto;
+  max-width: 80%;
+}
+
+/* Toast */
+.toast {
+  max-width: 600px;
+  padding: .25rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 2px 1px #bebebe;
+}
+
+.toast.toast-light {
+  background-color: #fff;
+}
+
+.toast.toast-dark {
+  background-color: #15243a;
+  color: #fff;
+}
+
+.rounded {
+  border-radius: 50px;
+}
+
+.centered {
+  justify-content: center;
+}
+
+/* Container  */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  margin-left: 1rem;
+}
+
+/* Icons */
+.material-symbols-rounded {
+  font-size: 28px;
+}
+
+.check-circle-green {
+  color: #03c703;
+  background: radial-gradient(circle at center, white 50%, transparent 50%);
+  border-radius: 50%;
+}
+
+.check-circle-light {
+  color: #fff;
+  background: radial-gradient(circle at center, #03c703 50%, transparent 50%);
+}
+
+.close-btn {
+  color: #756d6d;
+  font-size: 20px;
+  margin-top: .25rem;
+  margin-right: .5rem;
+  cursor: pointer;
+}
