@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  background: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  margin: 150px auto;
+  padding: 1rem;
+  max-width: 1000px;
+}
+
+.container {
+  display: flex;
+  margin: 2rem auto;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-horizontal {
+  max-width: 100%;
+  height: fit-content;
+  display: flex;
+  border-radius: 16px;
+  margin: 1rem auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #444;
+}
+
+.card-vertical {
+  margin: 1rem auto;
+  background-color: #fff;
+  width: 350px;
+  height: 480px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px #444;
+}
+
+.image-container {
+  min-width: 340px;
+  background: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.image-container.vertical {
+  min-height: 200px;
+  background-attachment: fixed;
+  border-bottom-left-radius: 0;
+  position: relative;
+}
+
+.tag {
+  padding: .5rem .75rem;
+  background-color: #e2e2e2;
+  max-width: fit-content;
+  border-radius: 8px;
+  margin: .5rem 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tag.vertical {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  background-color: #fff;
+}
+
+.card-post {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.card-title {
+  margin: .25rem 0;
+  width: 80%;
+}
+
+.card-title.vertical {
+  width: 100%;
+}
+
+.date {
+  color: #aaa9a9;
+  font-size: 14px;
+  margin: .25rem 0 1.25rem 0;
+}
+
+.text {
+  word-break: break-word;
+  font-size: 14px;
+  margin: 1rem 0 2rem 0;
+}
