@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Coding Challenge</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <!-- Card header -->
+      <div class="card-header">
+        <div class="card-header-container">
+          <h3 class="header-title">Where are do you want to play?</h3>
+          <span class="material-symbols-outlined cancel-btn">cancel</span>
+        </div>
+        <div class="radio-container">
+          <input type="radio" name="city" id="bergen" value="bergen" checked>
+          <label for="bergen">Bergen</label>
+          <input type="radio" name="city" id="oslo" value="oslo">
+          <label for="oslo">Oslo</label>
+        </div>
+      </div>
+      <!-- Card body -->
+      <div class="card-body">
+        <h3 class="body-title">Choose the party size</h3>
+        <div class="choice-container">
+          <div class="choice-box">
+            <div class="icon-container">
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+            </div>
+            <p class="choice-title">2 people</p>
+          </div>
+          <div class="choice-box">
+            <div class="icon-container">
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+            </div>
+            <p class="choice-title">4 people</p>
+          </div>
+          <div class="choice-box">
+            <div class="icon-container">
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+              <span class="material-symbols-outlined person-icon">person</span>
+            </div>
+            <p class="choice-title">6 people</p>
+          </div>
+        </div>
+        <button type="button" class="continue-btn">
+          <span>Continue</span>
+          <span class="material-symbols-outlined">
+            arrow_right_alt
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
