@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2 class="info-title">Your account is closed</h2>
+    <p class="info-text">Could you spare a minute to tell us how we could improve?</p>
+
+    <form action="#">
+      <p class="form-text">How likely you would recomend us tou your friends or colleagues?</p>
+      <input type="button" value="1">
+      <input type="button" value="2">
+      <input type="button" value="3">
+      <input type="button" value="4">
+      <input type="button" value="5">
+      <input type="button" value="6">
+      <input type="button" value="7">
+      <input type="button" value="8">
+      <input type="button" value="9">
+      <input type="button" value="10">
+
+      <p class="form-text">How can we improve?</p>
+      <textarea cols="30" rows="10" placeholder="Type your suggestion here"></textarea>
+      <button id="submit-button" type="submit">Submit</button>
+      <input type="hidden" name="rating" value="">
+    </form>
+    <dialog id="rating-dialog">
+      <p>You rated us:</p>
+      <p id="rating-display"></p>
+      <button id="close-button">Close</button>
+    </dialog>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
