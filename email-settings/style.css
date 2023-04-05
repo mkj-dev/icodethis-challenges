@@ -20,11 +20,24 @@ html {
   font-size: 14px;
 }
 
+/* Custom inputs */
 input[type="checkbox"],
 input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  transition: 0.3s;
   cursor: pointer;
+  outline: none;
+  accent-color: #5d40df;
 }
 
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+/* Form styles */
 .flex-container {
   display: flex;
   align-items: center;
@@ -36,10 +49,11 @@ input[type="radio"] {
   letter-spacing: 1.5px;
 }
 
-label {
+label { 
   color: #dde6e6;
   margin-left: .25rem;
   cursor: pointer;
+  padding-top: 4px;
 }
 
 .notification-info {
@@ -59,7 +73,6 @@ label {
   color: #5d40df
 }
 
-/* Save button */
 .save-button {
   display: block;
   width: 80%;
