@@ -7,7 +7,7 @@ const app = Vue.createApp({
   },
   methods: {
     async searchImages() {
-      const API_KEY = 'ijk9ughLsl-pxqkwaWWDtzh_QxG1qHmJbORsgudjePs';
+      const API_KEY = 'API_KEY';
       const url = `https://api.unsplash.com/search/photos?query=${this.searchQuery}&per_page=4&client_id=${API_KEY}`;
       const response = await fetch(url);
       const data = await response.json();
