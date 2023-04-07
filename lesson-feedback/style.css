@@ -1,0 +1,139 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0d1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 4rem;
+  text-align: center;
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-title {
+  color: #302c2c;
+  margin-top: 4rem;
+  font-size: 26px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.flex-button {
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  padding: .75rem;
+  border: none;
+  background-color: #6a46ec;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.flex-button:hover {
+  background-color: #7d59e3;
+}
+
+.material-symbols-outlined {
+  margin-right: .25rem;
+}
+
+.card p {
+  margin-top: 2rem;
+  font-size: 14px;
+  color: #7d59e3;
+}
+
+.card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 2rem auto;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-help,
+.card-feedback {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  background-color: #f8f8f4;
+  border: 1px solid #e0e0d1;
+  padding: 1rem;
+  font-size: 18px;
+  text-align: left;
+  justify-content: space-between;
+  color: #302c2c;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-help h3 {
+  max-width: 150px;
+}
+
+.flex-link {
+  display: flex;
+  text-decoration: none;
+  color: #7e7e76;
+}
+
+.flex-link span {
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    padding: 2rem;
+    margin: 80px auto;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-help,
+  .card-feedback {
+    width: 100%;
+  }
+}
