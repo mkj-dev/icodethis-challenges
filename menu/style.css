@@ -1,0 +1,134 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dff0fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  list-style: none;
+  display: flex;
+  background-color: #f2fffe;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  ul {
+    font-size: 12px;
+    flex-direction: column;
+  }
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.nav-left li,
+.nav-right li {
+  text-align: center;
+}
+
+.nav-right {
+  gap: 10px;
+}
+
+.nav-left a:hover {
+  background-color: #e1eceb;
+}
+
+li {
+  margin: 0 .75rem;
+}
+
+.sign-up-button {
+  max-width: 80px;
+  text-align: center;
+  background-color: #201338;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.login-button:hover {
+  background-color: #cfd5f3;
+  color: #ffffff;
+}
+
+a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: .75rem;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.resources-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 280px;
+  font-size: 12px;
+}
+
+.resources-dropdown li a {
+  text-transform: capitalize;
+}
+
+.top-controls-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.resources-link:hover+.resources-dropdown {
+  display: flex;
+}
+
+.top-controls-left,
+.top-controls-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top-controls-left li,
+.top-controls-right li {
+  text-align: left;
+}
+
+.top-controls-left li a,
+.top-controls-right li a {
+  padding: 0.25rem;
+}
+
+.top-controls-left a:hover,
+.top-controls-right a:hover {
+  background-color: #e1eceb;
+}
+
+.top-controls-right {
+  margin-left: 1rem;
+}
