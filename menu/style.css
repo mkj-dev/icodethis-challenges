@@ -94,6 +94,10 @@ a {
   align-items: flex-start;
 }
 
+.resources-dropdown:hover {
+  display: flex;
+}
+
 .resources-dropdown li a {
   text-transform: capitalize;
 }
