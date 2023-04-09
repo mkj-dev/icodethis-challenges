@@ -91,6 +91,7 @@ a {
   padding: 0.5rem;
   width: 280px;
   font-size: 12px;
+  align-items: flex-start;
 }
 
 .resources-dropdown li a {
@@ -100,7 +101,7 @@ a {
 .top-controls-title {
   font-weight: 600;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: .75rem;
 }
 
 .resources-link:hover+.resources-dropdown {
@@ -127,8 +128,4 @@ a {
 .top-controls-left a:hover,
 .top-controls-right a:hover {
   background-color: #e1eceb;
-}
-
-.top-controls-right {
-  margin-left: 1rem;
 }
