@@ -1,0 +1,149 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#location {
+  display: block;
+  width: 100%;
+  margin: .75rem auto 1rem auto;
+  padding: .75rem;
+  outline: none;
+  color: #000;
+}
+
+/* Custom checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]+label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.75rem;
+  position: relative;
+  margin: .5rem auto;
+}
+
+input[type="checkbox"]+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #444;
+  position: absolute;
+  left: 0;
+}
+
+input[type="checkbox"]:checked+label:after {
+  content: "\2713";
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 6px;
+}
+
+input[type="checkbox"]:checked+label:before {
+  background-color: #180e48;
+}
+
+/* Date container */
+.date-flx-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 2rem auto;
+}
+
+.date-flx-item {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="date"] {
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .date-flx-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time-flx-container {
+    justify-content: space-around;
+  }
+}
+
+/* Time container */
+.time-flx-container {
+  display: flex;
+  justify-content: center;
+}
+
+.time-flx-container input {
+  padding: .5rem;
+}
+
+/* Tooltip */
+.tooltip {
+  font-size: 24px;
+  margin-left: .5rem;
+}
+
+/* Checkmarks container */
+.checkmarks-flx-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkmark {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.checkmarks-flx-container p {
+  margin-bottom: 0;
+}
+
+.checkmarks-flx-container span {
+  margin-right: 10px;
+}
+
+/* Search button */
+button {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px transparent;
+  border-radius: 12px;
+  background-color: #f48260;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
