@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent A Car Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+    <h2 class="card-title">Search for a rental car</h2>
+    <form>
+      <label for="location">Pick up location</label>
+      <input type="search" name="location" id="location" placeholder="City, airport, region, district...">
+      <input type="checkbox" name="other-location" id="other-location">
+      <label for="other-location">Deliver the car somewhere else</label>
+      <div class="date-flx-container">
+        <div class="date-flx-item">
+          <label for="date-of-pickup">Date of pickup</label>
+          <input type="date" name="date-of-pickup" id="date-of-pickup">
+          <div class="time-flx-container">
+            <input type="time" name="pickup-hours" id="pickup-hours" value="10:00">
+            <input type="time" name="pickup-minutes" id="pickup-minutes">
+          </div>
+        </div>
+        <div class="date-flx-item">
+          <label for="date-of-delivery">Date of delivery</label>
+          <input type="date" name="date-of-delivery" id="date-of-delivery">
+          <div class="time-flx-container">
+            <input type="time" name="pickup-hours" id="pickup-hours" value="10:00">
+            <input type="time" name="pickup-minutes" id="pickup-minutes">
+          </div>
+        </div>
+      </div>
+      <input type="checkbox" name="drivers-age" id="drivers-age" checked>
+      <label for="drivers-age">The driver's age between 30 and 65? <span class="tooltip">&#x1F6C8;</span></label>
+      <div class="checkmarks-flx-container">
+        <p><span class="checkmark">&#x2713;</span>No credit card fees</p>
+        <p><span class="checkmark">&#x2713;</span>No change fees</p>
+        <p><span class="checkmark">&#x2713;</span>Price match guarantee</p>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+
+</html>
