@@ -1,0 +1,100 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAECF9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  padding: .5rem;
+  background-color: #554AAB;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px 1px #5f5f5f;
+}
+
+.card:nth-child(even) {
+  background-color: #EAECF9;
+  color: #36335C;
+}
+
+.date {
+  margin-left: 1rem;
+  margin-top: .5rem;
+}
+
+.date span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.date p {
+  margin-left: 4px;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.text {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.schedule-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 1rem;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time span {
+  margin: 0;
+  font-size: 11px;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 3rem 5rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: #36335C;
+  font-size: 1rem;
+  font-weight: 600;
+  color: antiquewhite;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 1px 1px 8px 1px #5f5f5f;
+}
