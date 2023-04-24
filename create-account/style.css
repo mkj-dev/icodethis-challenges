@@ -1,0 +1,137 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAECF9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.container.left {
+  width: 30%;
+  background-color: #AB86E5;
+  padding: 2rem 8rem 2rem 3rem;
+}
+
+.container.right {
+  width: 68%;
+  padding: 5rem 5rem 5rem 1rem;
+}
+
+.container-item {
+  max-width: 400px;
+  color: #F6E7FF;
+  margin: 2rem auto;
+}
+
+.container-item h2 {
+  margin-top: .25rem;
+  margin-bottom: 0;
+}
+
+.container-item p {
+  max-width: 220px;
+  margin-top: .25rem;
+}
+
+/* Form */
+input {
+  padding: 1.25rem;
+  width: 100%;
+  border: 2px solid #F6E7FF;
+  margin: .25rem 0;
+  display: block;
+}
+
+/* Custom inputs */
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label{
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.75rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #000;
+  margin-top: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+input[type="checkbox"] + label:after {
+  content: "";
+  display: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #AB86E5;
+}
+
+input[type="checkbox"]:checked + label:after {
+  color:#fff;
+  content: "\2713";
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  left: 6px;
+  top: 5px;
+}
+
+label {
+  margin: .25rem 0;
+}
+
+/* Icons */
+.material-symbols-outlined {
+  font-size: 30px;
+}
+
+.check-circle {
+  background: radial-gradient(circle at center, #B0A4DC 50%, transparent 50%);
+  border-radius: 50%;
+}
+
+button {
+  margin: 2rem 0;
+  width: 450px;
+  padding: 1.5rem;
+  max-width: 100%;
+  background-color: #AB86E5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+button:hover {
+  box-shadow: 1px 2px 4px#B0A4DC;
+}
